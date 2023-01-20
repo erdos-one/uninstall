@@ -1,0 +1,9 @@
+name = "install"
+main = "src/index.ts"
+compatibility_date = "2023-01-20"
+route = "install.erdos.one/*"
+usage_model = "bundled"
+env = { }
+
+[triggers]
+crons = [ ]

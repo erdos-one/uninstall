@@ -1,0 +1,17 @@
+{
+	"brew": {
+		"homepage": "https://brew.sh",
+		"script": "https://raw.githubusercontent.com/Homebrew/install/master/install.sh",
+		"shell": "bash"
+	},
+	"oh-my-zsh": {
+		"homepage": "https://ohmyz.sh",
+		"script": "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh",
+		"shell": "sh"
+	},
+	"r2": {
+		"homepage": "https://oss.erdos.one/r2",
+		"script": "https://raw.githubusercontent.com/erdos-one/r2/main/install.sh",
+		"shell": "sh"
+	}
+}
