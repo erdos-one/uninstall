@@ -1,4 +1,10 @@
-# install.erdos.one
+<p align="center">
+  <a href="https://github.com/erdos-one/install">
+    <img alt="erdos.install.one" src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/rocket_1f680.png" width="150"/>
+  </a>
+</p>
+
+<h1 align="center">install.erdos.one — Installation made easy</h1>
 
 Be gone the era of typing `https://raw.githubusercontent.com/...`
 
