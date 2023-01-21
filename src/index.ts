@@ -3,10 +3,10 @@ const helpMessage: string = `Install open-source projects with ease
 
 USAGE
   List available packages:
-    install.erdos.one/ls
+    curl https://install.erdos.one/ls
 
   Download a package (i.e. r2):
-    sh <(curl install.erdos.one/r2)
+    sh <(curl https://install.erdos.one/r2)
 
 LEARN MORE
   Read the docs at https://oss.erdos.one/install
