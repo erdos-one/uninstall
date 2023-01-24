@@ -8,9 +8,9 @@
 
 Be gone the era of typing `https://raw.githubusercontent.com/...`
 
-[install.erdos.one](https://github.com/erdos-one/install) is *not* a package manager. It's a simple
-router, powered by [Cloudflare Workers](https://workers.cloudflare.com/), that redirects requests to
-the install script of the open-source project you'd like to install. This project accompanies
+`install.erdos.one` is *not* a package manager. It's a simple router, powered by [Cloudflare
+Workers](https://workers.cloudflare.com/), that redirects requests to the install script of the
+open-source project you'd like to install. This project accompanies
 [gh.erdos.one](https://github.com/erdos-one/gh), our GitHub raw content URL shortener, but allows
 even shorter install commands for popular open-source projects. Uninstall scripts are also
 supported, but are handled instead by [uninstall.erdos.one](https://github.com/erdos-one/uninstall).
@@ -49,7 +49,7 @@ To list all projects in the registry, run the following command:
 curl https://install.erdos.one/ls
 ```
 
-## Add a package to the registry
+## Add a project to the registry
 
 This project doesn't aim to replace existing package managers — if you're looking for a project that
 accomplishes that, check out [tea](https://tea.xyz). Instead, it aims to provide simpler install
