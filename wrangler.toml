@@ -1,4 +1,4 @@
-name = "install"
+name = "uninstall"
 main = "src/index.ts"
 compatibility_date = "2023-01-23"
 route = "uninstall.erdos.one/*"
