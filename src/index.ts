@@ -2,24 +2,25 @@
 const helpMessage: string = `Install open-source projects with ease
 
 USAGE
-  List available packages:
+  List available projects:
     curl https://install.erdos.one/ls
 
-  Download a package (i.e. r2):
-    sh <(curl https://install.erdos.one/r2)
+  Download a project (i.e. Oh My Zsh):
+    sh <(curl https://install.erdos.one/ohmyzsh)
 
 LEARN MORE
   Read the docs at https://oss.erdos.one/install
 
 FEEDBACK
-  Open an issue on GitHub: https://github.com/erdos-one/r2
+  Open an issue on GitHub: https://github.com/erdos-one/install
 `
 
 // Type declaration for the packages registry
 interface Packages {
   [key: string]: {
     homepage: string
-    script: string
+    install: string
+    uninstall: string
     shell: string
   }
 }
@@ -63,8 +64,8 @@ export default {
 			return new Response(ls)
 		} else if (path in packages) {
 			// Fetch the install script from and return it
-			let script = await fetch(packages[path].script)
-			return script
+			let installScript = await fetch(packages[path].install)
+			return installScript
 		} else {
 			// Return the help message to enable proper usage
 			return new Response(helpMessage)
