@@ -1,18 +1,21 @@
 // Set the help message
-const helpMessage: string = `Install open-source projects with ease
+const helpMessage: string = `Uninstall open-source projects with ease
 
 USAGE
   List available projects:
-    curl https://install.erdos.one/ls
+    curl https://uninstall.erdos.one/ls
 
-  Download a project (i.e. Oh My Zsh):
-    sh <(curl https://install.erdos.one/ohmyzsh)
+		OR, using wget:
+		wget -qO- https://uninstall.erdos.one/ls
+
+  Uninstall a project (i.e. Oh My Zsh):
+    sh <(curl https://uninstall.erdos.one/ohmyzsh)
 
 LEARN MORE
-  Read the docs at https://oss.erdos.one/install
+  Read the docs at https://oss.erdos.one/uninstall
 
 FEEDBACK
-  Open an issue on GitHub: https://github.com/erdos-one/install
+  Open an issue on GitHub: https://github.com/erdos-one/uninstall
 `
 
 // Type declaration for the packages registry
@@ -63,9 +66,9 @@ export default {
 
 			return new Response(ls)
 		} else if (path in packages) {
-			// Fetch the install script from and return it
-			let installScript = await fetch(packages[path].install)
-			return installScript
+			// Fetch the uninstall script from https://github.com/erdos-one/install and return it
+			let uninstallScript = await fetch(packages[path].uninstall)
+			return uninstallScript
 		} else {
 			// Return the help message to enable proper usage
 			return new Response(helpMessage)
