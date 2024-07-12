@@ -2,7 +2,7 @@
   "name": "install",
   "version": "0.1.0",
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240512.0",
+    "@cloudflare/workers-types": "^4.20240701.0",
     "typescript": "^5.4.5",
     "wrangler": "3.57.0"
   },
